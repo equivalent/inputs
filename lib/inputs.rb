@@ -27,10 +27,10 @@ module Inputs
 
   def self.names(question)
     output question + " (Comma separated)"
-    name = gets
-    name = name.chomp.split(',').map(&:strip)
-    output name.join(' & ').green
-    name
+    names = gets
+    names = names.chomp.split(',').map(&:strip)
+    output names.join(' & ').green
+    names
   end
 
   def self.output(txt)
