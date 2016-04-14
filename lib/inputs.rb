@@ -63,6 +63,6 @@ module Inputs
   end
 
   def self._input_evaluator
-    @_input_evaluator ||= ->{ STDOUT.gets }
+    @_input_evaluator ||= ->{ STDIN.gets }
   end
 end
