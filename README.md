@@ -16,6 +16,17 @@ Inputs.name('What is your name')
 Inputs.names('Names of your parents')
 # Names of your parents
 # => Array
+
+Inputs.pick(['cat', 'dog'])
+# Please choose
+#   Press 1 for "cat"
+#   Press 2 for "dog"
+
+## after pressing 1
+# => 'cat'
+
+## after pressing 2
+# => 'dog'
 ```
 
 ## Installation
