@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/equivalent/inputs.svg?branch=master)](https://travis-ci.org/equivalent/inputs)
+
 # Inputs
 
 Really stupid primitive Gem that will handle some common console operations.
