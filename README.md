@@ -92,43 +92,7 @@ end
 Foo.new.call
 ```
 
-```text
-# bundle exec ruby foo.rb
-
-# run 1
-what is your name
-Tomas
-Tomas
-Ok Tomas, do you want to learn music instrument? [y/n]
-y
-Please choose:
-  Press 1 for "Drums"
-  Press 2 for "Guitar"
-  Press 3 for "Harph"
-1
-Metal dude ! ,,/
-
-# run 2
-what is your name
-Leo
-Leo
-Ok Leo, do you want to learn music instrument? [y/n]
-n
-Then go home Leo !
-
-# run 3
-what is your name
-Carl
-Carl
-Ok Carl, do you want to learn music instrument? [y/n]
-y
-Please choose:
-  Press 1 for "Drums"
-  Press 2 for "Guitar"
-  Press 3 for "Harph"
-3
-W.T.F dude ?
-```
+![Inputs gem example](https://raw.githubusercontent.com/equivalent/scrapbook2/master/assets/images/2016/inptus-gem-example.png)
 
 ## License
 
