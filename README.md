@@ -56,7 +56,7 @@ class Foo
 
       case instrument
       when drums
-        puts "Metal dude ! \,,/"
+        puts 'Metal dude ! \,,/'
       when guitar
         puts "Rock on dude !"
       when harph
