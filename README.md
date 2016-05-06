@@ -92,7 +92,7 @@ end
 Foo.new.call
 ```
 
-```bash
+```text
 # bundle exec ruby foo.rb
 
 # run 1
