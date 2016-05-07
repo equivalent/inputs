@@ -4,6 +4,11 @@
 
 Really stupid primitive Gem that will handle some common console operations.
 
+The gem aims to be really simple. If you looking for something more complex I recommend to use
+[TTY](http://piotrmurach.github.io/tty/),[tty-prompt](https://github.com/piotrmurach/tty-prompt)
+
+[Reddit discussion](https://www.reddit.com/r/ruby/comments/4i5dep/gem_inputs_another_pointless_gem_for_handling/)
+
 ```
 require 'inputs'
 
@@ -33,13 +38,22 @@ Inputs.pick(['cat', 'dog'])
 
 ## Installation
 
+Option 1:
+
+`gem install inputs`
+
+Option 2 (If you use `bundler`) :
+
 ```ruby
+# Gemfile
 gem 'inputs'
 ```
 
 And then execute:
 
-    $ bundle
+```bash
+$ bundle
+```
 
 ## Example
 
