@@ -73,7 +73,7 @@ class Foo
         puts 'Metal dude ! \,,/'
       when guitar
         puts "Rock on dude !"
-      when harph
+      when harp
         puts "W.T.F dude ?"
       end
     else
@@ -86,7 +86,7 @@ class Foo
       [
         drums,
         guitar,
-        harph
+        harp
       ]
     end
 
@@ -98,8 +98,8 @@ class Foo
       'Guitar'
     end
 
-    def harph
-      'Harph'
+    def harp
+      'Harp'
     end
 end
 
