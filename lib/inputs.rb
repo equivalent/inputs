@@ -7,7 +7,7 @@ module Inputs
       output question + " [y/n]"
       input = _input_evaluator.call
       input = input.chomp
-    end until %w(y n).include?(input.chomp
+    end until %w(y n).include?(input.chomp)
     input == 'y'
   end
 
