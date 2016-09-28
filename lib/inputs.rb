@@ -7,14 +7,8 @@ module Inputs
       output question + " [y/n]"
       input = _input_evaluator.call
       input = input.chomp
-    end until %w(y n).include?(input.chomp)
-
-    case input
-    when 'y'
-      true
-    when 'n'
-      false
-    end
+    end until %w(y n).include?(input.chomp
+    input == 'y'
   end
 
   def self.text(question)
