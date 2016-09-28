@@ -17,20 +17,17 @@ module Inputs
     end
   end
 
-  def self.name(question)
+  def self.text(question)
     output question
-    name = _input_evaluator.call
-    name = name.chomp
-    output name.green
-    name
+    _input_evaluator.call.chomp
   end
 
-  def self.names(question)
+  def self.multiple_text(question)
     output question + " (Comma separated)"
-    names = _input_evaluator.call
-    names = names.chomp.split(',').map(&:strip)
-    output names.join(' & ').green
-    names
+    texts = _input_evaluator.call
+    texts = texts.chomp.split(',').map(&:strip)
+    output "Okay, got #{texts.count} items."
+    texts
   end
 
   def self.pick(options, question: "Please choose:", option_output_eval: ->(key, option) { "  Press #{key} for \"#{option}\"" })
