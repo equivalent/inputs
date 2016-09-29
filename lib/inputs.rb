@@ -15,6 +15,7 @@ module Inputs
     output question
     _input_evaluator.call.chomp
   end
+  alias_method :name, :text
 
   def self.multiple_text(question)
     output question + " (Comma separated)"
@@ -23,6 +24,7 @@ module Inputs
     output "Okay, got #{texts.count} items."
     texts
   end
+  alias_method :names, :multiple_text
 
   def self.pick(options, question: "Please choose:", option_output_eval: ->(key, option) { "  Press #{key} for \"#{option}\"" })
     option_map = options
