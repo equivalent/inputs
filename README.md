@@ -9,7 +9,7 @@ The gem aims to be really simple. If you looking for something more complex I re
 
 [Reddit discussion](https://www.reddit.com/r/ruby/comments/4i5dep/gem_inputs_another_pointless_gem_for_handling/)
 
-```
+```ruby
 require 'inputs'
 
 Inputs.yn('Are you stupid?')
