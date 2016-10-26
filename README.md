@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/equivalent/inputs.svg?branch=master)](https://travis-ci.org/equivalent/inputs)
 [![Open Thanks](https://thawing-falls-79026.herokuapp.com/images/thanks-2.svg)](https://thawing-falls-79026.herokuapp.com/r/fpjrqlob)
+![Gittens](http://gittens.r15.railsrumble.com//badge/equivalent/inputs)
 
 # Inputs
 
