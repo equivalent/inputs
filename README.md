@@ -22,6 +22,10 @@ Inputs.name('What is your name')
 # What is your name
 # => String
 
+Inputs.name!('Do you want to skip this question?')
+# What is your name
+# => String or Nil if no input
+
 Inputs.names('Names of your parents')
 # Names of your parents
 # => Array

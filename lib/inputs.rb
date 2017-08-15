@@ -17,12 +17,24 @@ module Inputs
     end
   end
 
+  # Outputs a question and returns an input string. If no string is typed it returns empty string ("")
   def self.name(question)
     output question
     name = _input_evaluator.call
     name = name.chomp
     output name.green
     name
+  end
+
+  # Outputs a question and returns an input string. If no string is typed it returns nil
+  def self.name!(question)
+    output question
+    name = _input_evaluator.call
+    name = name.chomp
+    if name != ''
+      output name.green
+      name
+    end
   end
 
   def self.names(question)
