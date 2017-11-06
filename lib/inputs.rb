@@ -37,6 +37,14 @@ module Inputs
     end
   end
 
+  # Multiline input, exit via CTRL+D
+  def self.text(question)
+    output question
+    txt = _multi_line_input_evaluator.call
+    output txt.green
+    txt
+  end
+
   def self.names(question)
     output question + " (Comma separated)"
     names = _input_evaluator.call
@@ -76,5 +84,13 @@ module Inputs
 
   def self._input_evaluator
     @_input_evaluator ||= ->{ STDIN.gets }
+  end
+
+  def self._multi_line_input_evaluator=(evaluator)
+    @_multi_line_input_evaluator = evaluator
+  end
+
+  def self._multi_line_input_evaluator
+    @_multi_line_input_evaluator ||= ->(){ txt = ''; STDIN.each_line {|l| txt = txt + l }; txt }
   end
 end
