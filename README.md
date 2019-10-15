@@ -11,6 +11,8 @@ The gem aims to be really simple. If you looking for something more complex I re
 
 [Reddit discussion](https://www.reddit.com/r/ruby/comments/4i5dep/gem_inputs_another_pointless_gem_for_handling/)
 
+> Don't want to install gem ? There is a copy-paste version for your script [Inputs copy-paste version](https://gist.github.com/equivalent/5a428eb71e1f511e2a352b3865898d87)
+
 ```
 require 'inputs'
 
