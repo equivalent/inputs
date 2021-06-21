@@ -1,5 +1,6 @@
 require 'colorize'
 require "inputs/version"
+require 'io/console'
 
 module Inputs
   def self.yn(question)
@@ -43,6 +44,10 @@ module Inputs
     txt = _multi_line_input_evaluator.call
     output txt.green
     txt
+  end
+
+  def self.password(prompt = 'Please Enter your password: ')
+    IO::console.getpass(prompt)
   end
 
   def self.names(question)
